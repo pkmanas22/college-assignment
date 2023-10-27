@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Semester Mark Sheet</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            color: rgb(26, 26, 202);
+        }
+
+        body {
+            background: linear-gradient(135deg, rgb(243, 165, 165), white, rgb(175, 241, 175));
+            min-width: 300px;
+            max-width: 600px;
+            width: 100%;
+            height: 100vh;
+            margin: auto;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .container {
+            padding-top: 50px;
+        }
+
+        .details {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 500;
+        }
+        
+        .details, .details-item{
+            color: rgb(3, 70, 1);
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        table {
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 1px solid black;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        thead th,
+        tfoot td {
+            font-weight: 600;
+            font-size: 20px;
+            color: blue;
+        }
+
+        td {
+            padding: 2px;
+        }
+
+        .total{
+            color: rgb(69, 1, 179);
+        }
+
+        p {
+            font-size: 13px;
+            color: rgb(170, 6, 6);
+        }
+
+        p:first-of-type {
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="9">FAKIR MOHAN AUTONOMOUS COLLEGE, BALASORE <br> MARKSHEET-2020</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="9">
+                        <div class="details">
+                            <div class="details-item">NAME- Manas Kumar Pradhan</div>
+                            <div class="details-item">SEMESTER- First</div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="9">
+                        <div class="details">
+                            <div class="details-item">ROLL NO- 21S82015</div>
+                            <div class="details-item">REGD. NO- </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">SUBJECT NAME</td>
+                    <td colspan="2">MID SEMESTER</td>
+                    <td colspan="2">PRACTICAL EXAM</td>
+                    <td colspan="2">END SEMESTER</td>
+                    <td colspan="2">Total</td>
+                </tr>
+                <tr>
+                    <td>FM</td>
+                    <td>MO</td>
+                    <td>FM</td>
+                    <td>MO</td>
+                    <td>FM</td>
+                    <td>MO</td>
+                    <td>FM</td>
+                    <td>MO</td>
+                </tr>
+                <tr>
+                    <td>SUBJECT-1</td>
+                    <td>15</td>
+                    <td>xx</td>
+                    <td>25</td>
+                    <td>xx</td>
+                    <td>60</td>
+                    <td>xx</td>
+                    <td>100</td>
+                    <td>xx</td>
+                </tr>
+                <tr>
+                    <td>SUBJECT-2</td>
+                    <td>15</td>
+                    <td>xx</td>
+                    <td>25</td>
+                    <td>xx</td>
+                    <td>60</td>
+                    <td>xx</td>
+                    <td>100</td>
+                    <td>xx</td>
+                </tr>
+                <tr>
+                    <td>SUBJECT-3</td>
+                    <td>15</td>
+                    <td>xx</td>
+                    <td>25</td>
+                    <td>xx</td>
+                    <td>60</td>
+                    <td>xx</td>
+                    <td>100</td>
+                    <td>xx</td>
+                </tr>
+                <tr>
+                    <td>SUBJECT-4</td>
+                    <td>15</td>
+                    <td>xx</td>
+                    <td>25</td>
+                    <td>xx</td>
+                    <td>60</td>
+                    <td>xx</td>
+                    <td>100</td>
+                    <td>xx</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="7" class="total">GRAND TOTAL</td>
+                    <td class="total">400</td>
+                    <td class="total">xx</td>
+                </tr>
+            </tfoot>
+        </table>
+        <p>FM - Full Marks</p>
+        <p>MO - Marks Obtained</p>
+    </div>
+</body>
+
+</html>
