@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form || F.M. Auto. College, Balasore</title>
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/3d5eef6133.js" crossorigin="anonymous"></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <p>Kindly complete this form by providing the necessary information to enroll in the first semester at <a
+            href="https://fmcollege.nic.in/" target="_blank">F.M. Auto. College, Balasore</a></p>
+    <form action="#">
+        <div class="additional">
+            <span style="color: red">*</span>indicates a mandatory field
+        </div>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="first-name">First Name<span style="color: red">*</span>:
+                <input id="first-name" name="first-name" type="text" required />
+            </label>
+            <label for="middle-name">Middle Name:
+                <input id="middle-name" name="middle-name" type="text" />
+            </label>
+            <label for="last-name">Last Name<span style="color: red">*</span>:
+                <input id="last-name" name="last-name" type="text" required />
+            </label>
+            <label for="email">Email<span style="color: red">*</span>:
+                <input id="email" name="email" type="email" required />
+            </label>
+            <label for="mob">Mobile Number<span style="color: red">*</span>:
+                <input id="mob" name="mob" type="number" required>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Account Information</legend>
+            <div class="additional">
+                (minimum 8 character required)
+            </div>
+            <label for="new-password">New Password<span style="color: red">*</span>:
+                <input id="new-password" name="new-password" type="password" pattern="[a-z0-9]{8,}" required />
+            </label>
+            <label for="confirm-password">Confirm Password<span style="color: red">*</span>:
+                <input id="confirm-password" name="confirm-password" type="password" pattern="[a-z0-9]{8,}" required />
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="gender">Gender<span style="color: red">*</span>:
+                <label for="male">
+                    <input type="radio" name="gender" id="male" value="male" required> Male
+                </label>
+                <label for="female">
+                    <input type="radio" name="gender" id="female" value="female"> Female
+                </label>
+                <label for="other">
+                    <input type="radio" name="gender" id="other" value="other"> Other
+                </label>
+            </label>
+            <label for="dob">Date of Birth<span style="color: red">*</span>:
+                <input type="date" name="dob" id="dob" required>
+            </label>
+            <label for="stream">Choose Your Stream<span style="color: red">*</span>:
+                <label for="arts">
+                    <input type="radio" name="stream" id="arts" value="arts" required> Arts
+                </label>
+                <label for="science">
+                    <input type="radio" name="stream" id="science" value="science"> Science
+                </label>
+                <label for="commerce">
+                    <input type="radio" name="stream" id="commerce" value="commerce"> Commerce
+                </label>
+            </label>
+            <label for="address">Communication Address<span style="color: red">*</span>:
+                <textarea id="address" name="address" rows="3" cols="30" placeholder="Enter your address..." required></textarea>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Documents</legend>
+            <label for="certificate">Upload Your 10th Certificate<span style="color: red">*</span>:
+                <input id="certificate" type="file" name="file"  required/>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Terms & Conditions</legend>
+            <label for="terms-and-conditions">
+                <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" />
+                <span style="color: red">*</span>I accept the <a href="#" target="">terms and conditions</a>
+            </label>
+        </fieldset>
+
+        <div class="btn">
+            <input type="submit" value="Submit" class="button" id="submit" />
+            <input type="reset" value="Reset" class="button" id="reset" />
+        </div>
+    </form>
+</body>
+
+</html>
