@@ -27,7 +27,7 @@ p{
 }
 
 a{
-    color: #fff;
+    color: #807fd6;
     margin-left: 5px;
     font-size: 19px;
     font-weight: 500;
@@ -37,7 +37,7 @@ a{
 
 a:hover{
     text-decoration: underline;
-    color: #ec6767;
+    color: #49b457;
 }
 
 .additional{
